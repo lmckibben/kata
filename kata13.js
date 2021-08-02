@@ -13,10 +13,6 @@ const talkingCalendar = function(date) {
   let year = splitDate[0];
   //console.log(day);
 
-  //rounds date to nearest number getting rid of 0 at the start
-  let dayInt = Math.round(splitDate[1])
-  //console.log(dayInt);
-
   //create function to convert day
   const getDay = (day) => {
     let dayConvert = "";
@@ -39,12 +35,16 @@ const talkingCalendar = function(date) {
   const monthArray = ["January", "February", "March", "April",
                  "May", "June", "July",
                  "August", "September", "October",
-                "September", "November", "December"];
+                 "November", "December"];
   //console.log(monthArray.length);
   //console.log(monthArray[12])
 
+  //rounds date to nearest number getting rid of 0 at the start
+  let dayInt = Math.round(splitDate[1])
+  //console.log(dayInt);
+
   //set month
-  month = monthArray[dayInt] + " ";
+  month = monthArray[dayInt - 1] + " ";
   //console.log(month);
   
  
