@@ -1,22 +1,3 @@
-/*
-const camelCase = function(input) {
-  let finalString = "";
-
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] !== " ") {
-      finalString += input[i]
-    }else if (input[i] === " ") {
-      let upperCase = input[i + 1].toUpperCase();
-      finalString += upperCase;
-      i++
-    }
-  }
-
-  return finalString;
-};
-*/
-
-
 const camelCase = function(input) {
   let finalString = "";
 
